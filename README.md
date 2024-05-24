@@ -26,26 +26,26 @@ HTTP Load Tester is a general-purpose HTTP load-testing and benchmarking library
 
 #### Examples
 
-- Without Headers and Payload:
+- Without Headers and Payload:<br>
   `http_load_tester https://httpbin.org/get --qps 100 --duration 5`
-- With Headers:
+- With Headers:<br>
   `http_load_tester https://httpbin.org/get --qps 100 --duration 5 --headers '{"Authorization": "Bearer your_token"}'`
-- With Payload:
+- With Payload:<br>
   `http_load_tester https://httpbin.org/post --qps 100 --duration 5 --payload '{"key1": "value1", "key2": "value2"}'`
-- With Both Headers and Payload:
+- With Both Headers and Payload:<br>
   `http_load_tester https://httpbin.org/post --qps 100 --duration 5 --headers '{"Authorization": "Bearer your_token"}' --payload '{"key1": "value1", "key2": "value2"}'`
 
 ### Using Docker
 
 1. Build the Docker Image: `docker build -t http_load_tester .`
-2. Run the Docker Container: `docker run http_load_tester <url> --qps <qps> --duration <duration> [--headers '<headers>'] [--payload '<payload>']`
+2. Run the Docker Container:<br> `docker run http_load_tester <url> --qps <qps> --duration <duration> [--headers '<headers>'] [--payload '<payload>']`
 
 #### Examples
 
-- Without Headers and Payload: `docker run http_load_tester https://httpbin.org/get --qps 100 --duration 5`
-- With Headers: `docker run http_load_tester https://httpbin.org/get --qps 100 --duration 5 --headers '{"Authorization": "Bearer your_token"}'`
-- With Payload: `docker run http_load_tester https://httpbin.org/post --qps 100 --duration 5 --payload '{"key1": "value1", "key2": "value2"}'`
-- With Both Headers and Payload: `docker run http_load_tester https://httpbin.org/post --qps 100 --duration 5 --headers '{"Authorization": "Bearer your_token"}' --payload '{"key1": "value1", "key2": "value2"}'`
+- Without Headers and Payload:<br> `docker run http_load_tester https://httpbin.org/get --qps 100 --duration 5`
+- With Headers:<br> `docker run http_load_tester https://httpbin.org/get --qps 100 --duration 5 --headers '{"Authorization": "Bearer your_token"}'`
+- With Payload:<br> `docker run http_load_tester https://httpbin.org/post --qps 100 --duration 5 --payload '{"key1": "value1", "key2": "value2"}'`
+- With Both Headers and Payload:<br> `docker run http_load_tester https://httpbin.org/post --qps 100 --duration 5 --headers '{"Authorization": "Bearer your_token"}' --payload '{"key1": "value1", "key2": "value2"}'`
 
 ## Unit Test
 
