@@ -46,7 +46,3 @@ HTTP Load Tester is a general-purpose HTTP load-testing and benchmarking library
 ## Unit Test
 
 - Run Tests: `python -m unittest discover -s tests`
-
-## License
-
-MIT License
