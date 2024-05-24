@@ -26,10 +26,14 @@ HTTP Load Tester is a general-purpose HTTP load-testing and benchmarking library
 
 #### Examples
 
-- Without Headers and Payload: `http_load_tester https://httpbin.org/get --qps 100 --duration 5`
-- With Headers: `http_load_tester https://httpbin.org/get --qps 100 --duration 5 --headers '{"Authorization": "Bearer your_token"}'`
-- With Payload: `http_load_tester https://httpbin.org/post --qps 100 --duration 5 --payload '{"key1": "value1", "key2": "value2"}'`
-- With Both Headers and Payload: `http_load_tester https://httpbin.org/post --qps 100 --duration 5 --headers '{"Authorization": "Bearer your_token"}' --payload '{"key1": "value1", "key2": "value2"}'`
+- Without Headers and Payload:
+  `http_load_tester https://httpbin.org/get --qps 100 --duration 5`
+- With Headers:
+  `http_load_tester https://httpbin.org/get --qps 100 --duration 5 --headers '{"Authorization": "Bearer your_token"}'`
+- With Payload:
+  `http_load_tester https://httpbin.org/post --qps 100 --duration 5 --payload '{"key1": "value1", "key2": "value2"}'`
+- With Both Headers and Payload:
+  `http_load_tester https://httpbin.org/post --qps 100 --duration 5 --headers '{"Authorization": "Bearer your_token"}' --payload '{"key1": "value1", "key2": "value2"}'`
 
 ### Using Docker
 
